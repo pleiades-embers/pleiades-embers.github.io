@@ -1,0 +1,15 @@
+/* 增加名字前面的小图标 */
+#app .navbar .home-link span:before{
+    content: '';
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url(../img/before.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+ 
+ <comment-comment/> 
+ 

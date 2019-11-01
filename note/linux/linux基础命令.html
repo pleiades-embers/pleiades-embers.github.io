@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>linux 基础命令 | embers</title>
+    <meta name="description" content="余烬">
+    <link rel="icon" href="/logo.jpg">
+  <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.c107cf09.css" as="style"><link rel="preload" href="/assets/js/app.eea4310e.js" as="script"><link rel="preload" href="/assets/js/2.a0374f9c.js" as="script"><link rel="preload" href="/assets/js/21.c8a13606.js" as="script"><link rel="prefetch" href="/assets/js/10.83cd89fe.js"><link rel="prefetch" href="/assets/js/11.a46a3f49.js"><link rel="prefetch" href="/assets/js/12.4c0fcbeb.js"><link rel="prefetch" href="/assets/js/13.f42fb1d6.js"><link rel="prefetch" href="/assets/js/14.72efad17.js"><link rel="prefetch" href="/assets/js/15.9c1573bc.js"><link rel="prefetch" href="/assets/js/16.0391e1c1.js"><link rel="prefetch" href="/assets/js/17.850c6480.js"><link rel="prefetch" href="/assets/js/18.f2212ecf.js"><link rel="prefetch" href="/assets/js/19.1b98736c.js"><link rel="prefetch" href="/assets/js/20.d03cb66f.js"><link rel="prefetch" href="/assets/js/22.9ab5a9c1.js"><link rel="prefetch" href="/assets/js/23.1424a072.js"><link rel="prefetch" href="/assets/js/24.663e0ff4.js"><link rel="prefetch" href="/assets/js/25.69692971.js"><link rel="prefetch" href="/assets/js/26.575733fa.js"><link rel="prefetch" href="/assets/js/27.594d7ef0.js"><link rel="prefetch" href="/assets/js/28.1252255f.js"><link rel="prefetch" href="/assets/js/29.9ffba9f6.js"><link rel="prefetch" href="/assets/js/3.1d2ac0e8.js"><link rel="prefetch" href="/assets/js/30.e6372671.js"><link rel="prefetch" href="/assets/js/31.61bee863.js"><link rel="prefetch" href="/assets/js/32.8f73aa24.js"><link rel="prefetch" href="/assets/js/33.679f2783.js"><link rel="prefetch" href="/assets/js/34.97687ebb.js"><link rel="prefetch" href="/assets/js/35.1a434140.js"><link rel="prefetch" href="/assets/js/36.7ab8cbcd.js"><link rel="prefetch" href="/assets/js/37.246685f5.js"><link rel="prefetch" href="/assets/js/38.4c3abd23.js"><link rel="prefetch" href="/assets/js/39.b77e3c76.js"><link rel="prefetch" href="/assets/js/4.620dbc24.js"><link rel="prefetch" href="/assets/js/40.3aacfb2f.js"><link rel="prefetch" href="/assets/js/5.e40c23aa.js"><link rel="prefetch" href="/assets/js/6.f99bf8c4.js"><link rel="prefetch" href="/assets/js/7.5bac38f0.js"><link rel="prefetch" href="/assets/js/8.b636f602.js"><link rel="prefetch" href="/assets/js/9.12130c71.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c107cf09.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">embers</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/前端/" class="nav-link">前端</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>底层学习</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/note/huibian/" class="nav-link">汇编</a></li><li class="dropdown-subitem"><a href="/note/linux/" class="nav-link router-link-active">linux</a></li><li class="dropdown-subitem"><a href="/note/数据库/" class="nav-link">数据库</a></li></ul></li><li class="dropdown-item"><h4>高级语言</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/note/c++/" class="nav-link">c/c++</a></li><li class="dropdown-subitem"><a href="/note/python/" class="nav-link">python</a></li><li class="dropdown-subitem"><a href="/note/php/" class="nav-link">php</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">工具箱</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>在线编辑</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  图片压缩
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li><li class="dropdown-item"><h4>在线服务</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.aliyun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  阿里云
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://cloud.tencent.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  腾讯云
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li><li class="dropdown-item"><h4>博客指南</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://juejin.im/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://blog.csdn.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/前端/" class="nav-link">前端</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>底层学习</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/note/huibian/" class="nav-link">汇编</a></li><li class="dropdown-subitem"><a href="/note/linux/" class="nav-link router-link-active">linux</a></li><li class="dropdown-subitem"><a href="/note/数据库/" class="nav-link">数据库</a></li></ul></li><li class="dropdown-item"><h4>高级语言</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/note/c++/" class="nav-link">c/c++</a></li><li class="dropdown-subitem"><a href="/note/python/" class="nav-link">python</a></li><li class="dropdown-subitem"><a href="/note/php/" class="nav-link">php</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">工具箱</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>在线编辑</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  图片压缩
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li><li class="dropdown-item"><h4>在线服务</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.aliyun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  阿里云
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://cloud.tencent.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  腾讯云
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li><li class="dropdown-item"><h4>博客指南</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://juejin.im/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://blog.csdn.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>cmd命令</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>linux基础命令</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/note/linux/linux基础命令.html" class="active sidebar-link">linux 基础命令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/linux/linux基础命令.html#linux-基础命令" class="sidebar-link">linux 基础命令</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="linux-基础命令"><a href="#linux-基础命令" aria-hidden="true" class="header-anchor">#</a> linux 基础命令</h2> <ul><li>cat  /etc/centos-release 查看发行版本</li> <li>cat /proc/meminfo 内存大小</li> <li>ls  /dev/sda*</li> <li>free</li> <li>fdisk -l  磁盘分区</li> <li>halt</li> <li>lsblk   块设备的情况</li> <li>ipconfig 查看IP</li> <li>itrace  查看 library</li> <li>poweroff</li> <li>rpm   -qa|wc -l</li> <li>strace  查看system call</li> <li>uname -r 查看内核</li></ul> <p><img src="https://raw.githubusercontent.com/pleiades-embers/images/master/20190821193747.png" alt=""></p> <h4 id="文本处理"><a href="#文本处理" aria-hidden="true" class="header-anchor">#</a> 文本处理</h4> <ul><li><ul><li><code>cat</code>[OPTION] ...[FILE].. 查看文本 文件</li> <li>-E :显示行结束符</li> <li>-n:对显示出的每一行进行编号</li> <li>-a:显示所有控制符</li> <li>-b:非空行编号</li> <li>-s:压缩连续的空行成一行</li></ul></li> <li><code>tac</code> 反过来显示文本</li> <li><code>rev</code> 行反转显示</li></ul> <h4 id="文本搜索-grep"><a href="#文本搜索-grep" aria-hidden="true" class="header-anchor">#</a> 文本搜索 grep</h4> <ul><li>grep [-选项] ‘搜索内容串’文件名</li></ul> <table><thead><tr><th><strong>选项</strong></th> <th><strong>含义</strong></th></tr></thead> <tbody><tr><td>-v</td> <td>显示不包含匹配文本的所有行（相当于求反）</td></tr> <tr><td>-n</td> <td>显示匹配行及行号</td></tr> <tr><td>-i</td> <td>忽略大小写</td></tr></tbody></table> <h4 id="切换工作目录："><a href="#切换工作目录：" aria-hidden="true" class="header-anchor">#</a> 切换工作目录：</h4> <p>cd 【切换工作目录】cd 目录
+格式：
+cd 切换到用户主目录
+cd ~ 切换到当前用户的主目录
+cd .. 切换到上级目录
+cd .  切换到当前目录
+cd -  切换到上一次目录</p> <h4 id="文件搜索："><a href="#文件搜索：" aria-hidden="true" class="header-anchor">#</a> 文件搜索：</h4> <p>find 目录 参数 文件名（可以使用通配符）
+-name 文件名
+-size 大小
+-perm rwx</p> <h4 id="文件操作"><a href="#文件操作" aria-hidden="true" class="header-anchor">#</a> 文件操作</h4> <p>归档：
+tar -cvf 归档文件名.tar 文件1 文件2  目录1 目录2
+解归档：
+tar -xvf 归档文件名.tar  -C 路径</p> <p>压缩：
+gzip 归档文件名.tar  生成了一个文件 归档文件名.tar.gz 文件大小小于归档文件大小 归档文件名.tar不存在了
+解压缩：
+gzip -d 归档文件名.tar.gz 生成了一个文件 归档文件名.tar</p> <p>一步归档压缩：
+tar -czvf 文件名.tar.gz 文件1 文件2 目录1 目录2</p> <p>一步解归档压缩：
+tar -xzvf 文件名.tar.gz -C 路径</p> <p>bzip2压缩：
+tar -cjvf 文件名.tar.bz2 文件1 文件2 目录1 目录2
+bzip2解压缩：
+tar -xjvf 文件名.tar.bz2 -C 路径</p> <p>zip压缩：
+zip 文件名 文件1 文件2 目录1 目录2  生成一个文件为：文件名.zip
+unzip解压缩：
+unzip 文件名.zip -C 路径</p> <h4 id="用户权限"><a href="#用户权限" aria-hidden="true" class="header-anchor">#</a> 用户权限</h4> <p>su 切换用户账户
+格式：
+【su 用户名 】
+【su】 切换到root
+【su root】 切换到root
+【su -】 切换到root用户 同时切换到root目录</p> <p>添加组：
+【groupadd 组名】  添加组  需要用户权限</p> <p>删除组
+【groupdel 组名】  删除组  需要用户权限和清空组成员
+修改用户所在组：
+【usermod -g 组名 用户名1 用户名2】需要用户权限</p> <p>添加用户：
+【useradd -d /home/目录 用户名 -g 组名 -m】新建用户 设置用户主目录和设置组名 并自动创建  需要用户权限</p> <p>设置密码：
+【passwd 用户名】设置密码 需要用户权限</p> <p>删除用户：
+【userdel -r 用户名】 删除用户递归删除该用户所有文件 需要用户权限</p> <h4 id="修改文件权限："><a href="#修改文件权限：" aria-hidden="true" class="header-anchor">#</a> 修改文件权限：</h4> <p>字符法格式：【chmod -u|g|o|a +|- rwc 文件1 文件2】
+d rwx r-x r-x
+u user +|- rwx
+g group +|- rwx
+o other +|- rwx
+a all +|- rwx
+chmod u + x</p> <p>【chmod 372 文件名1 文件名2】</p> <p>rwx rwx rwx
+421 421 421</p> <p>rw- r-x r--</p> <p>-wx rwx -w-</p> <p>r--------</p> <p>rw- rw- r--
+chmod 6 6 4  a.txt</p> <p>修改文件所有者：
+【chown 用户名 文件1 文件2 目录1 目录2】需要用户权限
+修改文件组：
+【chgrp 组名 文件1 文件2 目录1 目录2】需要用户权限</p> <h4 id="编辑器："><a href="#编辑器：" aria-hidden="true" class="header-anchor">#</a> 编辑器：</h4> <p>VI编辑器有两个模式：文本编辑模式 命令行处理模式
+进入编辑器：
+1、vi 文件名  2、vim
+操作编辑器：
+【i】在光标当前位置插入
+【a】在光标右侧位置插入
+【o】在光标下一行位置开启新的一行插入
+【O】在光标上一行位置开启新的一行插入
+【I】在光标当前行行首插入
+【A】在光标当前行行尾插入</p> <p>退出编辑器：
+【ZZ】保存退出
+【:wq】保存退出
+【:x】保存退出
+【:w 文件名】保存到指定文件中
+【:q】 保存退出 针对未修改的文件 注意：未保存文件会提示 无法退出
+【:q!】 强制退出  退出 不保存
+【:! 命令】暂时离开vi 执行其他命令</p> <p>编辑器操作：
+【[n]x】删除光标位置后面n个字符
+【[n]X】删除光标位置前面n个字符
+【D】删除光标所在位置后面到行尾的所有字符
+【[n]dd】删除光标所在行及下面n行   剪切
+【p】在光标下一行粘贴
+【[n]yy】复制光标所在行及下面n行
+【dG】删除光标所在行到文件结尾
+【J】合并光标所在行和下一行 中间用空格连接
+【.】执行上一次命令行操作
+【u】撤销</p> <p>编辑器定位：
+【ctrl+b】回滚 行号减小
+【ctrl+f】前滚 行号增加
+【gg】定位在文件第一行行首
+【G】定位在文件最后一行行首
+<code>【:$ 】定位在文件最后一行行首</code>
+【[n]G | [n]gg】定位在m行
+注意：在查找一些特殊含义的字符时，需要加上转义字符
+【/内容】查找
+【n】查找下一个
+【N】查找上一个
+【?】查找上一次的所搜内容
+【/^word】 查找以word开头的内容
+【/word$】 查找以word结尾的内容
+【/.】查找任意一个字符
+【/*】查找任意多个字符</p> <p>编辑器替换：
+【r】替换光标所在位置的字符
+【:r 文件名】在光标当前行的下一行插入一个文件 每次添加只能添加一个文件
+【😒/a/b/g】将光标所在行的a替换为b
+【:g/a/s//b/g】将文件中所有a替换为b
+【:n1,n2s/a/b/g】将行区间n1到n2的行中所有的a替换为b</p> <p>编辑器设置：
+【:set ic】搜索时不区分大小写
+【:set noic】搜索时区分大小写</p> <h4 id="远程连接服务器："><a href="#远程连接服务器：" aria-hidden="true" class="header-anchor">#</a> 远程连接服务器：</h4> <p>linux设置：
+1、右击网络设置，在打开对话框中选择网络适配器
+2、在网络连接中选择网络桥接模式并选择复制物理网络地址
+3、重启linux服务器
+4、获取ip地址【ifconfig】
+windows设置：
+1、安装中文版Xshell5
+2、打开XShell选择文件，在下拉列表中选择新建
+3、在弹出对话框中设置用户名和ip地址
+4、验证身份需要输入linux服务器的用户名和密码</p> <p>远程文件传输：
+1、在窗口菜单中选择新建文件传输
+2、在打开sftp对话框中设置路径linux路径 同时设置windows路径 命令时lcd 在打开对话框中设置路径
+3、文件传输 put上传 将windows中的文件上传到Linux服务器中 get 下载将Linux中的文件下载到windows中</p> <p>linux服务器搭建：
+1、上传文件 http.tar.gz
+2、解压文件 tar -xzvf http.tar.gz 解压完成之后生成一个目录http
+3、进入http目录 编译程序，sudo make
+4、启动服务器 sudo ./myhttp start stop
+5、ifconfig获取Linux服务器地址</p> <p>手写C语言版网页：
+1、进入http目录
+2、新建一个文件名为XXX.c
+3、gcc -o XXX.cgi XXX.c
+4、重启服务器</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/linux/cmd命令.html" class="prev">CMD常用命令</a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.eea4310e.js" defer></script><script src="/assets/js/2.a0374f9c.js" defer></script><script src="/assets/js/21.c8a13606.js" defer></script>
+  </body>
+</html>
